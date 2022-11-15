@@ -49,7 +49,7 @@ async def get_name(message: Message, state: FSMContext):
             data[message.from_user.id]['name'] = message.text
 
         await Form.next()
-        await message.reply('<b>Okay, now select whay year student you are.</b>', parse_mode='HTML', reply_markup=make_keyboard(courses))
+        await message.reply('<b>Okay, now select what year student you are.</b>', parse_mode='HTML', reply_markup=make_keyboard(courses))
 
     else:
         await message.reply_sticker('CAACAgQAAxkBAAEZeSxjXkH7gGoqiqMjIkCd5ouzzmFzrgACDQEAAnm8YRscusjP5NIQfyoE')
